@@ -2,14 +2,12 @@ const express = require("express");
 
 const app = express();
 
-// add top-level route handler
 app.get("/", function (req, res) {
-  res.send("You have reached the top-level route handler with a GET");
+  res.send("This is the top route in the Blog Post API");
 });
 
-// add student routes
-require("./src/routes/student.route")(app);
+require("./src/routes/blogposts.route")(app);
 
 app.listen(3000, function () {
-  console.log("Example app listening on port 3000!");
+  console.log("App listening on port 3000");
 });

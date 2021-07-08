@@ -1,11 +1,12 @@
 
-### get at top level
-http://localhost:3000/ 
+### api calls for our blog post API
 
-###
+GET http://localhost:3000 HTTP/1.1
 
-http://localhost:3000/api/student/
+### GET all blog posts
 
-### 
+GET http://localhost:3000/api/blogposts/ HTTP/1.1
 
-GET http://localhost:3000/api/student/13
+### Get a blog post by ID
+
+GET http://localhost:3000/api/blogposts/13 HTTP/1.1
