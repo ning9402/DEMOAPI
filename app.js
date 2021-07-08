@@ -7,6 +7,8 @@ app.get("/", function (req, res) {
 });
 
 require("./src/routes/blogposts.route")(app);
+require("./src/routes/user.route")(app);
+require("./src/routes/todo.route")(app);
 
 app.listen(3000, function () {
   console.log("App listening on port 3000");
